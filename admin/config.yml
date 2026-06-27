@@ -3,6 +3,7 @@ backend:
   repo: a-i-am/my-portal
   branch: main
   base_url: https://my-portal-beige.vercel.app
+  auth_endpoint: callback
   
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
