@@ -1,8 +1,10 @@
 backend:
   name: github
-  repo: [본인깃허브아이디]/[레포지토리이름] # 예: aiam-dev/my-portal
+  repo: a-i-am/my-portal
   branch: main
-
+  base_url: https://my-portal-beige.vercel.app
+  auth_endpoint: api/auth
+  
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
