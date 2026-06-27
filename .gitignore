@@ -1,0 +1,20 @@
+# --- OS & Mac Artifacts ---
+.DS_Store
+Thumbs.db
+
+# --- Editor & IDE ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# --- Uploaded Media (CMS로 올린 이미지들) ---
+# ※ 만약 깃허브 용량을 아끼기 위해 이미지 원본을 로컬에만 두고 
+#   Neocities 서버에 따로 직접 올리실 거면 아래 주석(#)을 해제하세요.
+# images/uploads/
+
+# --- Temporary & Log Files ---
+*.log
+*.tmp

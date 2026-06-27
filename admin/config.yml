@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: [본인깃허브아이디]/[레포지토리이름] # 예: aiam-dev/my-portal
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "블로그 게시글 작성"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "글 제목", name: "title", widget: "string" }
+      - { 
+          label: "카테고리", 
+          name: "category", 
+          widget: "select", 
+          options: ["TIL", "DevLog", "Life", "BioArt"] 
+        }
+      - { label: "게시 날짜", name: "date", widget: "datetime" }
+      - { label: "간략 설명 (Summary)", name: "summary", widget: "string", required: false }
+      - { label: "태그 (Tags)", name: "tags", widget: "list", required: false }
+      - { label: "본문 내용 (.md)", name: "body", widget: "markdown" }
