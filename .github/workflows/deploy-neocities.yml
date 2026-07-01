@@ -1,0 +1,26 @@
+name: Deploy to Neocities
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload static site
+        env:
+          NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
+        run: |
+          test -n "$NEOCITIES_API_KEY"
+          curl --fail --silent --show-error \
+            -H "Authorization: Bearer $NEOCITIES_API_KEY" \
+            -F "index.html=@index.html" \
+            -F "css/style.css=@css/style.css" \
+            -F "js/app.js=@js/app.js" \
+            -F "posts/posts.json=@posts/posts.json" \
+            -F "posts/2026-06-28-welcome.md=@posts/2026-06-28-welcome.md" \
+            https://neocities.org/api/upload
