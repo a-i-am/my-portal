@@ -3,146 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIAM - Dev Portal</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>이건의 아카이브</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root { --accent: #10b981; }
-        .md-body h1 { font-size: 1.8rem; font-weight: bold; margin: 1.5em 0 0.5em; color: var(--accent); }
-        .md-body h2 { font-size: 1.4rem; font-weight: bold; margin: 1.2em 0 0.4em; }
-        .md-body p { margin-bottom: 1em; line-height: 1.7; color: #d4d4d8; }
-        .md-body pre { background: #09090b; padding: 1rem; border-radius: 0.5rem; border: 1px solid #27272a; overflow-x: auto; margin: 1em 0; }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#111113] text-zinc-100 flex min-h-screen font-sans">
+<body>
+    <div class="site-shell">
+        <header class="site-header box">
+            <button class="title-button" data-route="home">
+                <h1>이건의 아카이브</h1>
+            </button>
+            <div class="field-badges">
+                <span class="badge badge-olive">Biomedical Art</span>
+                <span class="badge-separator">x</span>
+                <span class="badge badge-black">Game Client Programming</span>
+            </div>
+        </header>
 
-    <aside class="w-64 bg-[#18181b] border-r border-zinc-800 p-6 flex flex-col shrink-0 sticky top-0 h-screen">
-        <h1 class="text-xl font-bold tracking-wider text-[#10b981]" id="title-color">aiam.dev</h1>
-        <p class="text-xs text-zinc-400 mt-1">Client Programmer & Bio-Art</p>
-        
-        <nav class="mt-8 flex flex-col gap-2 text-sm">
-            <a href="#" onclick="switchTab('home')" class="p-2 hover:bg-zinc-800 rounded text-zinc-300">🏠 Home</a>
-            <a href="#" onclick="switchTab('portfolio')" class="p-2 hover:bg-zinc-800 rounded text-zinc-300">📂 Portfolio</a>
-            <a href="#" onclick="switchTab('blog')" class="p-2 hover:bg-zinc-800 rounded text-zinc-300">📝 Tech & TIL</a>
-            <a href="/admin/index.html" target="_blank" class="mt-4 p-2 bg-zinc-800/50 hover:bg-zinc-800 text-xs text-center border border-zinc-700 rounded text-amber-400">🔒 CMS 글쓰기</a>
+        <nav class="main-nav box" aria-label="주요 메뉴">
+            <div class="mobile-nav-head">
+                <span id="mobile-nav-label">집 (Home)</span>
+                <button id="nav-toggle" class="icon-button" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+            </div>
+            <ul class="nav-list" id="desktop-nav">
+                <li><button class="nav-link active" data-route="home">집 (Home)</button></li>
+                <li class="nav-item">
+                    <button class="nav-link" data-route="biomed">바이오 메디컬 아트</button>
+                    <div class="dropdown-menu">
+                        <button data-route="biomed">해부학 일러스트레이션</button>
+                        <button data-route="biomed">3D 인체 구조 모델링</button>
+                        <button data-route="biomed">학술 저널 삽화</button>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-route="game">게임 클라이언트</button>
+                    <div class="dropdown-menu">
+                        <button data-route="game">C++ 엔진 프로그래밍</button>
+                        <button data-route="game">렌더링 파이프라인</button>
+                        <button data-route="game">메모리 최적화</button>
+                    </div>
+                </li>
+                <li><button class="nav-link" data-route="blog">블로그</button></li>
+                <li><button class="nav-link" data-route="contact">연락하다</button></li>
+            </ul>
+            <div class="mobile-nav" id="mobile-nav" hidden>
+                <button data-route="home">집 (Home)</button>
+                <button data-route="biomed">바이오 메디컬 아트</button>
+                <button data-route="game">게임 클라이언트</button>
+                <button data-route="blog">블로그</button>
+                <button data-route="contact">연락하다</button>
+            </div>
         </nav>
 
-        <div class="mt-auto border-t border-zinc-800 pt-4 text-xs">
-            <span class="text-zinc-400">🎨 포인트 컬러</span>
-            <div class="flex gap-2 mt-2">
-                <button onclick="changeColor('#10b981')" class="w-4 h-4 rounded-full bg-[#10b981]"></button>
-                <button onclick="changeColor('#3b82f6')" class="w-4 h-4 rounded-full bg-[#3b82f6]"></button>
-                <button onclick="changeColor('#f59e0b')" class="w-4 h-4 rounded-full bg-[#f59e0b]"></button>
-                <button onclick="changeColor('#ec4899')" class="w-4 h-4 rounded-full bg-[#ec4899]"></button>
-            </div>
-        </div>
-    </aside>
+        <div class="content-grid">
+            <main class="main-column">
+                <section id="view-home" class="view-section active" aria-label="홈">
+                    <div class="box window-box">
+                        <div class="window-title">// 환영합니다 - WELCOME</div>
+                        <div class="window-content welcome-layout">
+                            <div class="welcome-copy">
+                                <p>제 이름은 <strong>이건</strong>이고, 이곳은 제 개인 아카이브 웹사이트입니다.</p>
+                                <p>저는 학술적 기준과 해부학적 정확성에 기반한 <strong class="mark-olive">바이오 메디컬 아트</strong>, 최적화와 시스템 아키텍처를 탐구하는 <strong class="mark-black">게임 클라이언트 프로그래밍</strong>을 분리해 기록합니다.</p>
+                                <p>상단 메뉴에서 관심 있는 영역의 프로젝트와 개발 일지를 확인할 수 있습니다.</p>
+                                <div class="button-row">
+                                    <button class="action-button olive" data-route="biomed">바이오 메디컬 아트 보기</button>
+                                    <button class="action-button lime" data-route="game">게임 클라이언트 보기</button>
+                                </div>
+                            </div>
+                            <div class="profile-frame">
+                                <img src="https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?w=250&h=300&fit=crop&crop=face" alt="이건 프로필">
+                            </div>
+                        </div>
+                    </div>
 
-    <main class="flex-1 p-10 max-w-4xl">
-        <div id="tab-home" class="tab-content block">
-            <h2 class="text-2xl font-bold">Welcome to my space.</h2>
-            <p class="text-zinc-400 mt-2">서버리스 CMS와 정적 호스팅이 결합된 개발 블로그입니다.</p>
-        </div>
+                    <div class="stats-row">
+                        <div class="stat-card box"><strong>12+</strong><span>메디컬 일러스트</span></div>
+                        <div class="stat-card box"><strong>8+</strong><span>게임 클라이언트 프로젝트</span></div>
+                        <div class="stat-card box"><strong>5년+</strong><span>경력</span></div>
+                    </div>
 
-        <div id="tab-portfolio" class="tab-content hidden">
-            <h2 class="text-2xl font-bold mb-6">Game Client Portfolio</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-[#18181b] p-4 rounded border border-zinc-800">
-                    <div class="h-32 bg-zinc-800 rounded flex items-center justify-center text-zinc-500 font-bold">Project LUP</div>
-                    <h3 class="font-bold mt-3">Project LUP v2025</h3>
-                    <p class="text-xs text-zinc-400 mt-1">C# 기반 모듈형 게임 시스템 설계</p>
+                    <div class="box window-box">
+                        <div class="window-title">// 최신 연구 및 개발 일지</div>
+                        <div class="window-content">
+                            <div id="recent-posts" class="post-stack"></div>
+                            <button class="wide-button" data-route="blog">전체 게시물 보기</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="view-biomed" class="view-section" aria-label="바이오 메디컬 아트">
+                    <div class="box window-box">
+                        <div class="window-title olive-title">// 바이오 메디컬 아트</div>
+                        <div class="window-content">
+                            <p>학술적 기준과 해부학적 정확성을 최우선으로 합니다. 의사와 연구자 협업을 통해 완성된 작업물은 의학적 고증을 거칩니다.</p>
+                            <div class="tag-row">
+                                <span>#해부학</span><span>#의학삽화</span><span>#3D모델링</span><span>#생리학</span><span>#병리학</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="biomed-grid" class="project-grid"></div>
+                </section>
+
+                <section id="view-game" class="view-section" aria-label="게임 클라이언트">
+                    <div class="box window-box">
+                        <div class="window-title">// 게임 클라이언트 프로그래밍</div>
+                        <div class="window-content">
+                            <p>최적화와 시스템 아키텍처를 탐구합니다. C++ 기반 저수준 구현과 렌더링 파이프라인 분석을 중심으로 측정 가능한 성능 개선을 목표로 합니다.</p>
+                            <div class="tag-row">
+                                <span>#C++</span><span>#DirectX12</span><span>#언리얼엔진</span><span>#메모리관리</span><span>#렌더링</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="game-grid" class="project-grid"></div>
+                    <div class="box github-strip">
+                        <div>
+                            <strong>더 많은 코드를 보려면</strong>
+                            <span>GitHub에서 전체 레포지토리를 확인하세요.</span>
+                        </div>
+                        <a href="https://github.com/a-i-am" target="_blank" rel="noreferrer">GitHub 방문</a>
+                    </div>
+                </section>
+
+                <section id="view-blog" class="view-section" aria-label="블로그">
+                    <div class="box window-box">
+                        <div class="window-title">// 블로그 - 연구 및 개발 일지</div>
+                        <div class="window-content">
+                            <p>바이오 메디컬 아트와 게임 클라이언트 프로그래밍 두 분야의 작업 과정, 기술 분석, 방법론을 기록합니다.</p>
+                        </div>
+                    </div>
+                    <div class="filter-tabs" role="tablist" aria-label="게시물 필터">
+                        <button class="active" data-filter="all">전체 게시물</button>
+                        <button data-filter="biomed">바이오 메디컬</button>
+                        <button data-filter="game">게임 클라이언트</button>
+                    </div>
+                    <div id="blog-list" class="blog-list"></div>
+                </section>
+
+                <section id="view-reader" class="view-section" aria-label="게시글">
+                    <button class="back-button" type="button" data-route="blog">목록으로 돌아가기</button>
+                    <article id="post-body" class="box markdown-body"></article>
+                    <aside id="reader-toc" class="box reader-toc" hidden>
+                        <strong>목차</strong>
+                        <div id="toc-links"></div>
+                    </aside>
+                </section>
+
+                <section id="view-contact" class="view-section" aria-label="연락">
+                    <div class="box window-box">
+                        <div class="window-title">// 연락하다 - CONTACT</div>
+                        <div class="window-content">
+                            <p>협업 제안, 프리랜서 의뢰, 기술적 질문 모두 환영합니다. 분야를 선택하면 빠른 회신이 가능합니다.</p>
+                        </div>
+                    </div>
+                    <div class="contact-cards">
+                        <a class="contact-card box" href="mailto:lee.geon@example.com"><strong>이메일</strong><span>lee.geon@example.com</span></a>
+                        <a class="contact-card box" href="https://github.com/a-i-am" target="_blank" rel="noreferrer"><strong>GitHub</strong><span>github.com/a-i-am</span></a>
+                        <a class="contact-card box" href="#" aria-disabled="true"><strong>Twitter / X</strong><span>@lee_geon_dev</span></a>
+                    </div>
+                    <form id="contact-form" class="box contact-form">
+                        <div class="window-title">메시지 보내기</div>
+                        <div class="form-body">
+                            <label>이름 *<input required type="text" name="name" placeholder="홍길동"></label>
+                            <label>이메일 *<input required type="email" name="email" placeholder="example@email.com"></label>
+                            <label class="full">문의 분야 *
+                                <select required name="category">
+                                    <option value="">선택해 주세요</option>
+                                    <option value="biomed">바이오 메디컬 아트 의뢰</option>
+                                    <option value="game">게임 클라이언트 관련 협업</option>
+                                    <option value="blog">블로그 내용 관련 질문</option>
+                                    <option value="other">기타</option>
+                                </select>
+                            </label>
+                            <label class="full">메시지 *<textarea required name="message" rows="5" placeholder="프로젝트 개요, 일정, 예산 등을 자유롭게 작성해 주세요."></textarea></label>
+                            <button class="wide-button full" type="submit">메시지 전송</button>
+                            <p id="contact-result" class="form-result" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            <aside class="side-column">
+                <button class="sitemap-button box" data-route="home">사이트맵</button>
+                <div class="box window-box">
+                    <div class="window-title">// 빠른 이동</div>
+                    <div class="quick-links">
+                        <button data-route="home">집 (Home)</button>
+                        <button data-route="biomed">바이오 메디컬 아트</button>
+                        <button data-route="game">게임 클라이언트</button>
+                        <button data-route="blog">블로그</button>
+                        <button data-route="contact">연락하다</button>
+                    </div>
                 </div>
+                <div class="box window-box">
+                    <div class="window-title">// 주요 태그</div>
+                    <div class="window-content tag-cloud">
+                        <span>#해부학</span><span>#C++</span><span>#의학삽화</span><span>#언리얼엔진</span><span>#DirectX</span><span>#생리학</span><span>#메모리관리</span><span>#3D모델링</span><span>#렌더링</span><span>#ECS</span><span>#병리학</span><span>#HLSL</span>
+                    </div>
+                </div>
+                <div class="box author-card">
+                    <div class="window-title olive-title">// 작성자</div>
+                    <div class="author-body">
+                        <img src="https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?w=60&h=60&fit=crop&crop=face" alt="이건">
+                        <div><strong>이건</strong><span>Biomedical Artist<br>& Game Client Programmer</span></div>
+                    </div>
+                </div>
+                <div class="box window-box">
+                    <div class="window-title light-title">// 관련 링크</div>
+                    <div class="related-links">
+                        <a href="#">Medical Journal</a>
+                        <a href="#">Game Dev Forum</a>
+                        <a href="https://github.com/a-i-am" target="_blank" rel="noreferrer">GitHub Repo</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="site-footer">
+            <strong>© 2026 이건의 아카이브</strong>
+            <div>
+                <button data-route="home">홈</button>
+                <button data-route="biomed">메디컬</button>
+                <button data-route="game">게임</button>
+                <button data-route="blog">블로그</button>
+                <button data-route="contact">연락</button>
             </div>
-        </div>
+        </footer>
+    </div>
 
-        <div id="tab-blog" class="tab-content hidden">
-            <h2 class="text-2xl font-bold mb-6">Tech Log & TIL</h2>
-            <div id="post-list" class="flex flex-col gap-4"></div>
-        </div>
-
-        <div id="tab-reader" class="tab-content hidden">
-            <button onclick="switchTab('blog')" class="text-sm text-[#10b981] mb-6">← 목록으로 돌아가기</button>
-            <article id="md-view" class="md-body"></article>
-        </div>
-    </main>
-
-    <aside id="toc-panel" class="w-56 p-8 hidden md:block border-l border-zinc-800/50 text-xs sticky top-0 h-screen">
-        <p class="font-bold text-zinc-400 mb-3">목차 (TOC)</p>
-        <div id="toc-list" class="flex flex-col gap-2 text-zinc-500"></div>
-    </aside>
-
-    <script>
-        // 1. 깃허브 API에서 posts 폴더의 파일 목록을 읽어오는 로직
-        const GITHUB_USER = "[본인깃허브아이디]";
-        const GITHUB_REPO = "[레포지토리이름]";
-        
-        async function fetchPosts() {
-            const listEl = document.getElementById('post-list');
-            listEl.innerHTML = '<p class="text-zinc-500">깃허브에서 글 목록을 불러오는 중...</p>';
-            
-            try {
-                // 깃허브 API를 통해 posts 폴더 내의 파일들을 조회
-                const res = await fetch(`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/posts`);
-                const files = await res.json();
-                
-                listEl.innerHTML = '';
-                for(const file of files) {
-                    if(file.name.endsWith('.md')) {
-                        const item = document.createElement('div');
-                        item.className = "p-4 bg-[#18181b] border border-zinc-800 hover:border-[#10b981] cursor-pointer rounded transition";
-                        item.onclick = () => loadPost(file.download_url);
-                        item.innerHTML = `<h3 class="font-bold text-lg">${file.name.replace('.md', '')}</h3><p class="text-xs text-zinc-500 mt-1">GitHub 저장소 연동 문서</p>`;
-                        listEl.appendChild(item);
-                    }
-                }
-            } catch(e) {
-                listEl.innerHTML = '<p class="text-rose-500">글 목록을 불러오지 못했습니다. config.yml의 깃허브 경로를 확인해주세요.</p>';
-            }
-        }
-
-        async function loadPost(url) {
-            switchTab('reader');
-            const res = await fetch(url);
-            const text = await res.text();
-            
-            // Frontmatter (---) 제거 후 본문만 파싱
-            const cleanText = text.replace(/^---[\s\S]+?---/, '');
-            const view = document.getElementById('md-view');
-            view.innerHTML = marked.parse(cleanText);
-            hljs.highlightAll();
-
-            // 목차 생성
-            const toc = document.getElementById('toc-list');
-            toc.innerHTML = '';
-            view.querySelectorAll('h1, h2').forEach((h, idx) => {
-                h.id = `toc-${idx}`;
-                const a = document.createElement('a');
-                a.href = `#toc-${idx}`;
-                a.innerText = h.innerText;
-                a.className = "hover:text-[#10b981] transition truncate";
-                a.onclick = (e) => { e.preventDefault(); h.scrollIntoView({behavior:'smooth'}); };
-                toc.appendChild(a);
-            });
-        }
-
-        function switchTab(tab) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
-            document.getElementById(`tab-${tab}`).classList.remove('hidden');
-            if(tab === 'blog') fetchPosts();
-        }
-
-        function changeColor(hex) {
-            document.documentElement.style.setProperty('--accent', hex);
-            document.getElementById('title-color').style.color = hex;
-            localStorage.setItem('my_color', hex);
-        }
-
-        window.onload = () => {
-            const saved = localStorage.getItem('my_color');
-            if(saved) changeColor(saved);
-        };
-    </script>
+    <div id="modal-root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

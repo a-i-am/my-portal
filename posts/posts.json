@@ -5,6 +5,7 @@
     "category": "TIL",
     "date": "2026-06-28",
     "file": "posts/2026-06-28-welcome.md",
-    "summary": "순수 정적 환경에서 Fetch API로 빌드 없이 작동하는 블로그 구축기"
+    "summary": "순수 정적 환경에서 Fetch API로 빌드 없이 작동하는 블로그 구축기",
+    "tags": ["Static", "Markdown", "Fetch"]
   }
 ]
