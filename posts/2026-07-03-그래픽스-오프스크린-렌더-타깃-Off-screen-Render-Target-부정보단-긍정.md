@@ -1,4 +1,4 @@
-# [그래픽스] 오프스크린 렌더 타깃(Off-screen Render Target) :: 부정보단 긍정
+# [그래픽스] 오프스크린 렌더 타깃(Off-screen Render Target)
 
 <div data-copy-service-computed-style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; margin: 12px 0px 16px; text-decoration: none; border-bottom: 0px rgb(10, 10, 10);" data-hveid="CAIIAAgBCAYQAA" data-sfc-cb="" data-sfc-root="c" data-sfc-cp=""><span data-copy-service-computed-style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; margin: 0px; text-decoration: none; border-bottom: 0px rgb(10, 10, 10);" data-sfc-cb="" data-sfc-root="c" data-sfc-cp=""><b>오프스크린 렌더 타깃(Off-screen Render Target)</b></span></div>
 <p data-ke-size="size16">&nbsp;</p>

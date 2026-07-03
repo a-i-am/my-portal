@@ -1,4 +1,4 @@
-# [H/W] CPU & GPU(Central/Graphics Processing Unit) :: 부정보단 긍정
+# [H/W] CPU & GPU(Central/Graphics Processing Unit)
 
 <h3 data-ke-size="size23"><b>CPU는 중앙처리장치(Central Processing Unit)로 컴퓨터의 두뇌 역할,</b></h3>
 <div style="background-color: #ffffff; color: #444444; text-align: start;">

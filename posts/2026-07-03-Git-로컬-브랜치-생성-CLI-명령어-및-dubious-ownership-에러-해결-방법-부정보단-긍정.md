@@ -1,4 +1,4 @@
-# [Git] 로컬 브랜치 생성 CLI 명령어 및 'dubious ownership' 에러 해결 방법 :: 부정보단 긍정
+# [Git] 로컬 브랜치 생성 CLI 명령어 및 'dubious ownership' 에러 해결 방법
 
 <h2 data-ke-size="size26">1. Git 브랜치 생성 및 이동하기 (CLI)</h2>
 <p data-ke-size="size16">터미널에서 새 브랜치를 만드는 방법은 크게 두 가지. 브랜치 생성과 동시에 해당 브랜치로 바로 이동하는 1번 방식 추천.</p>
