@@ -16,12 +16,20 @@ jobs:
           NEOCITIES_API_KEY: ${{ secrets.NEOCITIES_API_KEY }}
         run: |
           test -n "$NEOCITIES_API_KEY"
+          
+          ARGS=()
+          ARGS+=("-F" "index.html=@index.html")
+          ARGS+=("-F" "css/style.css=@css/style.css")
+          ARGS+=("-F" "js/app.js=@js/app.js")
+          ARGS+=("-F" "Blog Profile.png=@Blog Profile.png")
+          
+          for file in posts/*; do
+            if [ -f "$file" ]; then
+              ARGS+=("-F" "$file=@$file")
+            fi
+          done
+          
           curl --fail --silent --show-error \
             -H "Authorization: Bearer $NEOCITIES_API_KEY" \
-            -F "index.html=@index.html" \
-            -F "css/style.css=@css/style.css" \
-            -F "js/app.js=@js/app.js" \
-            -F "Blog Profile.png=@Blog Profile.png" \
-            -F "posts/posts.json=@posts/posts.json" \
-            -F "posts/2026-06-28-welcome.md=@posts/2026-06-28-welcome.md" \
+            "${ARGS[@]}" \
             https://neocities.org/api/upload
