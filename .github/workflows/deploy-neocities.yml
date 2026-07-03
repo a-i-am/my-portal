@@ -21,6 +21,7 @@ jobs:
             -F "index.html=@index.html" \
             -F "css/style.css=@css/style.css" \
             -F "js/app.js=@js/app.js" \
+            -F "Blog Profile.png=@Blog Profile.png" \
             -F "posts/posts.json=@posts/posts.json" \
             -F "posts/2026-06-28-welcome.md=@posts/2026-06-28-welcome.md" \
             https://neocities.org/api/upload
