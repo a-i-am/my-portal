@@ -1,8 +1,8 @@
 :root {
-    --lime: #c5ee3b;
-    --ivory: #f9faef;
-    --olive: #8d9568;
-    --light-lime: #f2fedc;
+    --lime: #C0EB75;
+    --ivory: #FFF9DB;
+    --olive: #D8F5A2;
+    --light-lime: #E9FAC8;
     --black: #000;
     --border: 3px solid var(--black);
     --shadow: 6px 6px 0 var(--black);

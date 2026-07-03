@@ -8,7 +8,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=260&fit=crop",
         desc: "경마 시스템과 마피아 게임의 추리 요소를 결합한 웹 보드게임. 상태 머신 로직 설계 및 AI 기반 자동 레이스 루프 연동.",
         tools: ["React", "Zustand"],
-        color: "#8d9568",
+        color: "#D8F5A2",
     },
     {
         title: "Jellyfish Dancers",
@@ -19,7 +19,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1544331569-8041d8e1fb7c?w=400&h=260&fit=crop",
         desc: "웹캠 및 센서 네트워크 기반 실시간 반응형 미디어 아트 프로젝트. 세그멘테이션 데이터 셰이더 연동 및 다중 센서 입력 파이프라인 구성.",
         tools: ["Unity 6", "VFX Graph"],
-        color: "#c5ee3b",
+        color: "#C0EB75",
     },
     {
         title: "url2pdf",
@@ -30,7 +30,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=260&fit=crop",
         desc: "웹 페이지를 PDF 파일로 일괄 변환하는 자동화 도구. 웹 페이지 URL 추출 및 PDF 변환 파이프라인 스크립트 작성.",
         tools: ["Python"],
-        color: "#f2fedc",
+        color: "#E9FAC8",
     },
     {
         title: "Uni Birth",
@@ -41,7 +41,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=400&h=260&fit=crop",
         desc: "실시간 반응형 턴제 RPG. 턴제 전투 시스템 설계, 실시간 회피/패링 QTE 구현 및 버프 시스템 구축.",
         tools: ["UE5", "C++"],
-        color: "#8d9568",
+        color: "#D8F5A2",
     },
     {
         title: "Project LUP",
@@ -52,7 +52,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=400&h=260&fit=crop",
         desc: "A* 알고리즘 및 행동 트리 기반 AI 구현 프로젝트. 그리드 기반 A* 경로 탐색 알고리즘 구현.",
         tools: ["C++", "C#"],
-        color: "#c5ee3b",
+        color: "#C0EB75",
     },
     {
         title: "WHERE IS MY TOILET?",
@@ -63,7 +63,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=260&fit=crop",
         desc: "인하대학교 미래인재개발원 게임잼 출품 2D 플랫포머 액션 게임. FSM 기반 Enemy AI 시스템 구현.",
         tools: ["Unity 2D", "C#"],
-        color: "#f2fedc",
+        color: "#E9FAC8",
     },
     {
         title: "Tell The Story",
@@ -74,7 +74,7 @@ const programsProjects = [
         thumb: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=260&fit=crop",
         desc: "컴투스 공모전 컴:온 2024 출품작. 대사 및 텍스트 기반 시뮬레이션 게임. 데이터 구조 설계 및 UGUI 시스템 개발.",
         tools: ["Unity 3D", "C#"],
-        color: "#8d9568",
+        color: "#D8F5A2",
     }
 ];
 
@@ -89,7 +89,7 @@ const gameProjects = [
         desc: "실시간 반응형 턴제 RPG. 턴제 전투 시스템 설계, 실시간 회피/패링 QTE 구현 및 버프 시스템 구축.",
         stats: [{ label: "엔진", value: "UE5" }, { label: "언어", value: "C++" }],
         lang: "C++",
-        color: "#8d9568",
+        color: "#D8F5A2",
     },
     {
         title: "Project LUP",
@@ -101,7 +101,7 @@ const gameProjects = [
         desc: "A* 알고리즘 및 행동 트리 기반 AI 구현 프로젝트. 그리드 기반 A* 경로 탐색 알고리즘 구현.",
         stats: [{ label: "알고리즘", value: "A*" }, { label: "AI", value: "BT" }],
         lang: "C++ / C#",
-        color: "#c5ee3b",
+        color: "#C0EB75",
     },
     {
         title: "YOU / 2D Casual Action",
@@ -113,7 +113,7 @@ const gameProjects = [
         desc: "적을 수집해 아군으로 소환하는 2D 횡스크롤 액션 RPG 데모 프로젝트. 캐릭터 조작, 팔로워 포메이션 구현.",
         stats: [{ label: "엔진", value: "Unity" }, { label: "언어", value: "C#" }],
         lang: "C#",
-        color: "#f2fedc",
+        color: "#E9FAC8",
     },
     {
         title: "Lemmings Win32 API",
@@ -125,7 +125,7 @@ const gameProjects = [
         desc: "고전 게임 '레밍즈' 모작 프로젝트. WinAPI 환경 그래픽 렌더링 및 객체 제어 시스템 구현.",
         stats: [{ label: "API", value: "Win32" }, { label: "언어", value: "C++" }],
         lang: "C++",
-        color: "#8d9568",
+        color: "#D8F5A2",
     }
 ];
 
@@ -141,7 +141,7 @@ let blogPosts = [
         thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=200&h=140&fit=crop",
         excerpt: "대규모 오픈월드 씬에서 동일 메시를 효율적으로 렌더링하려면 드로우콜 수를 줄여야 합니다.",
         body: "# 드로우콜 최적화\n\nInstancing과 배칭은 동일 렌더 상태를 묶어 CPU 제출 비용을 낮추는 기본 전략입니다.\n\n## 핵심\n\n- 동일 메시와 머티리얼을 먼저 묶기\n- 상태 변경을 줄이기\n- 측정 후 병목만 최적화하기",
-        color: "#c5ee3b",
+        color: "#C0EB75",
     },
     {
         id: "upper-limb-origin-insertion",
@@ -154,7 +154,7 @@ let blogPosts = [
         thumb: "https://images.unsplash.com/photo-1715111965644-3d885beb3a44?w=200&h=140&fit=crop",
         excerpt: "해부학 일러스트에서 근육의 기시와 정지는 형태보다 먼저 검증해야 하는 기준점입니다.",
         body: "# 상지 해부학 시각화\n\n근육 표현은 기시와 정지를 먼저 고정한 뒤 부피와 방향성을 잡는 순서가 안정적입니다.\n\n## 작업 순서\n\n1. 기준 골격 배치\n2. 기시와 정지 확인\n3. 근섬유 방향 정리",
-        color: "#8d9568",
+        color: "#D8F5A2",
     },
     {
         id: "descriptor-heap",
@@ -167,7 +167,7 @@ let blogPosts = [
         thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=200&h=140&fit=crop",
         excerpt: "DX12의 Descriptor 관리는 렌더링 성능과 안정성에 직접 영향을 주는 저수준 책임입니다.",
         body: "# Descriptor Heap 관리\n\nDescriptor Heap은 프레임 수명과 리소스 수명을 분리해 관리하면 단순해집니다.\n\n## 원칙\n\n- 프레임 임시 할당은 링 버퍼\n- 장기 리소스는 고정 슬롯\n- 재사용은 fence 이후",
-        color: "#c5ee3b",
+        color: "#C0EB75",
     },
     {
         id: "medical-art-validation",
@@ -180,7 +180,7 @@ let blogPosts = [
         thumb: "https://images.unsplash.com/photo-1715529134960-b49e99668dcc?w=200&h=140&fit=crop",
         excerpt: "의학 삽화는 커뮤니케이션 도구입니다. 정확성 검증은 미감보다 먼저 끝내야 합니다.",
         body: "# 해부학적 고증 방법론\n\n작업 전 참고 문헌, 의료 영상, 전문가 피드백을 한 흐름으로 묶어 오류를 줄입니다.\n\n## 체크\n\n- 구조 이름\n- 위치 관계\n- 임상적 맥락",
-        color: "#8d9568",
+        color: "#D8F5A2",
     },
     {
         id: "memory-pool",
@@ -193,7 +193,7 @@ let blogPosts = [
         thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=200&h=140&fit=crop",
         excerpt: "게임 런타임에서 예측 가능한 할당 시간은 프레임 안정성을 지키는 기본 조건입니다.",
         body: "# 메모리 풀 할당자\n\n고정 크기 객체가 많다면 범용 힙보다 풀 할당자가 단순하고 빠릅니다.\n\n## 적용 기준\n\n- 크기가 일정한 객체\n- 생성과 파괴가 잦은 객체\n- 프레임 타임 흔들림이 문제인 구간",
-        color: "#c5ee3b",
+        color: "#C0EB75",
     },
 ];
 
@@ -233,7 +233,7 @@ async function loadManifestPosts() {
             excerpt: post.summary || "",
             file: post.file,
             body: post.body,
-            color: normalizeCategory(post.category) === "programs" ? "#8d9568" : "#c5ee3b",
+            color: normalizeCategory(post.category) === "programs" ? "#D8F5A2" : "#C0EB75",
         }));
         const knownIds = new Set(normalized.map((post) => post.id));
         blogPosts = [...normalized, ...blogPosts.filter((post) => !knownIds.has(post.id))];
