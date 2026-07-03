@@ -585,7 +585,7 @@ function openProjectModal(project) {
 
     modalBox.innerHTML = `
         <div class="modal-head" style="border-bottom-color: ${project.color || '#000'}">
-            <h2 style="color: ${project.color || '#000'}">${project.title}</h2>
+            <h2 style="color: var(--olive);">${project.title}</h2>
             <button class="modal-close" style="width:34px; height:34px; border:2px solid #000; background:var(--ivory); font-weight:950; cursor:pointer;">X</button>
         </div>
         <div class="modal-body">
