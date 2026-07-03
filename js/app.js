@@ -399,9 +399,8 @@ function renderTilPosts() {
         el.innerHTML = `
             <div class="thumb" style="background-image: url('${post.thumb}')"></div>
             <div class="content">
-                <span class="meta">${post.mainCategory} > ${post.subCategory} | ${post.date}</span>
-                <strong>${post.title}</strong>
-                <p>${post.excerpt}</p>
+                <strong style="display:block; margin-bottom:8px; font-size:16px; text-align:left;">${post.title}</strong>
+                <p style="margin:0; text-align:left;">${post.excerpt}</p>
             </div>
         `;
         container.appendChild(el);
@@ -461,9 +460,8 @@ function renderSeriesPosts() {
         el.innerHTML = `
             <div class="thumb" style="background-image: url('${post.thumb}')"></div>
             <div class="content">
-                <span class="meta">${post.seriesName} | ${post.date}</span>
-                <strong>${post.title}</strong>
-                <p>${post.excerpt}</p>
+                <strong style="display:block; margin-bottom:8px; font-size:16px; text-align:left;">${post.title}</strong>
+                <p style="margin:0; text-align:left;">${post.excerpt}</p>
             </div>
         `;
         container.appendChild(el);
