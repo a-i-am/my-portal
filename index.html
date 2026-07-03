@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aiam의 아카이브</title>
+    <!-- SEO 및 소셜 공유 태그 (Open Graph) -->
+    <meta name="description" content="박시은 - Game & Interactive Contents Developer의 포트폴리오 및 개발 일지">
+    <meta property="og:title" content="aiam의 아카이브">
+    <meta property="og:description" content="게임 클라이언트 프로그래밍, 인터랙티브 콘텐츠 개발 포트폴리오 및 TIL">
+    <meta property="og:image" content="Blog Profile.png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -28,29 +34,22 @@
             <ul class="nav-list" id="desktop-nav">
                 <li><button class="nav-link active" data-route="home">집 (Home)</button></li>
                 <li class="nav-item">
-                    <button class="nav-link" data-route="programs">개발 프로그램</button>
+                    <button class="nav-link" data-route="programs">개발 프로젝트</button>
                     <div class="dropdown-menu">
                         <button data-route="programs" data-prog="media">미디어 아트</button>
                         <button data-route="programs" data-prog="game">게임(Game)</button>
                         <button data-route="programs" data-prog="tools">도구(Tools)</button>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-route="game">게임 클라이언트</button>
-                    <div class="dropdown-menu">
-                        <button data-route="game">Unreal Engine 5</button>
-                        <button data-route="game">Unity 3D/2D</button>
-                        <button data-route="game">인공지능(AI) & 렌더링</button>
-                    </div>
-                </li>
-                <li><button class="nav-link" data-route="blog">블로그</button></li>
+                <li><button class="nav-link" data-route="series">Series</button></li>
+                <li><button class="nav-link" data-route="til">TIL</button></li>
                 <li><button class="nav-link" data-route="contact">연락하다</button></li>
             </ul>
             <div class="mobile-nav" id="mobile-nav" hidden>
                 <button data-route="home">집 (Home)</button>
-                <button data-route="programs">개발 프로그램</button>
-                <button data-route="game">게임 클라이언트</button>
-                <button data-route="blog">블로그</button>
+                <button data-route="programs">개발 프로젝트</button>
+                <button data-route="series">Series</button>
+                <button data-route="til">TIL</button>
                 <button data-route="contact">연락하다</button>
             </div>
         </nav>
@@ -62,12 +61,12 @@
                         <div class="window-title">// 환영합니다 - WELCOME</div>
                         <div class="window-content welcome-layout">
                             <div class="welcome-copy">
-                                <p>제 이름은 <strong>박시은</strong>이고, 이곳은 제 개인 아카이브 웹사이트입니다.</p>
+                                <p>제 개인 아카이브 웹사이트입니다.</p>
                                 <p>게임 클라이언트 프로그래밍, 인터랙티브 콘텐츠, 웹, 앱 등의 개발 분야를 기록합니다.</p>
                                 <p>상단 메뉴에서 관심 있는 영역의 프로젝트와 개발 일지를 확인할 수 있습니다.</p>
                                 <div class="button-row">
-                                    <button class="action-button olive" data-route="programs">개발 프로그램 보기</button>
-                                    <button class="action-button lime" data-route="game">게임 클라이언트 보기</button>
+                                    <button class="action-button olive" data-route="programs">개발 프로젝트 보기</button>
+                                    <button class="action-button lime" data-route="series">시리즈 리포트 보기</button>
                                 </div>
                             </div>
                             <div class="profile-frame">
@@ -86,14 +85,14 @@
                         <div class="window-title">// 최신 연구 및 개발 일지</div>
                         <div class="window-content">
                             <div id="recent-posts" class="post-stack"></div>
-                            <button class="wide-button" data-route="blog">전체 게시물 보기</button>
+                            <button class="wide-button" data-route="til">전체 게시물 보기</button>
                         </div>
                     </div>
                 </section>
 
-                <section id="view-programs" class="view-section" aria-label="개발 프로그램">
+                <section id="view-programs" class="view-section" aria-label="개발 프로젝트">
                     <div class="box window-box">
-                        <div class="window-title olive-title">// 개발 프로그램</div>
+                        <div class="window-title olive-title">// 개발 프로젝트</div>
                         <div class="window-content">
                             <p>사용자 상호작용과 새로운 시각적 경험에 중점을 둡니다. 웹 기반 보드게임부터 센서 연동 미디어 아트, 데이터 자동화 파이프라인까지 다양한 플랫폼에서의 실험적 프로젝트를 다룹니다.</p>
                         </div>
@@ -107,43 +106,44 @@
                     <div id="programs-grid" class="project-grid"></div>
                 </section>
 
-                <section id="view-game" class="view-section" aria-label="게임 클라이언트">
+                <section id="view-series" class="view-section" aria-label="Series">
                     <div class="box window-box">
-                        <div class="window-title">// 게임 클라이언트 프로그래밍</div>
+                        <div class="window-title">// Series - 프로젝트 리포트</div>
                         <div class="window-content">
-                            <p>최적화와 시스템 아키텍처를 탐구합니다. Unreal Engine 5와 Unity를 활용한 게임 플레이 로직 설계, C++ 기반 시스템 구현 및 AI (A* & 행동 트리) 연구를 기록합니다.</p>
-                            <div class="tag-row">
-                                <span>#UnrealEngine5</span><span>#Unity</span><span>#C++</span><span>#C#</span><span>#AI</span>
-                            </div>
+                            <p>진행한 프로젝트별 상세 개발 리포트와 분석을 모아봅니다.</p>
                         </div>
                     </div>
-                    <div id="game-grid" class="project-grid"></div>
-                    <div class="box github-strip">
-                        <div>
-                            <strong>더 많은 코드를 보려면</strong>
-                            <span>GitHub에서 전체 레포지토리를 확인하세요.</span>
+                    <div class="sidebar-layout">
+                        <aside class="inner-sidebar box">
+                            <div class="window-title">프로젝트 목록</div>
+                            <div id="series-categories" class="category-tree"></div>
+                        </aside>
+                        <div class="inner-content">
+                            <div id="series-list" class="blog-list"></div>
                         </div>
-                        <a href="https://github.com/a-i-am" target="_blank" rel="noreferrer">GitHub 방문</a>
                     </div>
                 </section>
 
-                <section id="view-blog" class="view-section" aria-label="블로그">
+                <section id="view-til" class="view-section" aria-label="TIL">
                     <div class="box window-box">
-                        <div class="window-title">// 블로그 - 연구 및 개발 일지</div>
+                        <div class="window-title">// TIL - 연구 및 개발 일지</div>
                         <div class="window-content">
                             <p>개발 과정의 고민, 기술 분석, 문제 해결 방법론을 기록합니다.</p>
                         </div>
                     </div>
-                    <div class="filter-tabs" role="tablist" aria-label="게시물 필터">
-                        <button class="active" data-filter="all">전체 게시물</button>
-                        <button data-filter="game">게임 클라이언트</button>
-                        <button data-filter="programs">인터랙티브/웹</button>
+                    <div class="sidebar-layout">
+                        <aside class="inner-sidebar box">
+                            <div class="window-title">카테고리</div>
+                            <div id="til-categories" class="category-tree"></div>
+                        </aside>
+                        <div class="inner-content">
+                            <div id="til-list" class="blog-list"></div>
+                        </div>
                     </div>
-                    <div id="blog-list" class="blog-list"></div>
                 </section>
 
                 <section id="view-reader" class="view-section" aria-label="게시글">
-                    <button class="back-button" type="button" data-route="blog">목록으로 돌아가기</button>
+                    <button class="back-button" type="button" data-route="til">목록으로 돌아가기</button>
                     <article id="post-body" class="box markdown-body"></article>
                     <aside id="reader-toc" class="box reader-toc" hidden>
                         <strong>목차</strong>
@@ -182,9 +182,9 @@
                     <div class="window-title">// 빠른 이동</div>
                     <div class="quick-links">
                         <button data-route="home">집 (Home)</button>
-                        <button data-route="programs">개발 프로그램</button>
-                        <button data-route="game">게임 클라이언트</button>
-                        <button data-route="blog">블로그</button>
+                        <button data-route="programs">개발 프로젝트</button>
+                        <button data-route="series">Series</button>
+                        <button data-route="til">TIL</button>
                         <button data-route="contact">연락하다</button>
                     </div>
                 </div>
@@ -215,9 +215,9 @@
             <strong>© 2026 aiam의 아카이브</strong>
             <div>
                 <button data-route="home">홈</button>
-                <button data-route="programs">개발 프로그램</button>
-                <button data-route="game">게임</button>
-                <button data-route="blog">블로그</button>
+                <button data-route="programs">프로젝트</button>
+                <button data-route="series">시리즈</button>
+                <button data-route="til">TIL</button>
                 <button data-route="contact">연락</button>
             </div>
         </footer>
