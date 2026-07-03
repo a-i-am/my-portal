@@ -554,15 +554,7 @@ async function openPost(id, updateHash = true) {
 function openProjectModal(project) {
     const root = document.getElementById("modal-root");
     const overlay = document.createElement("div");
-    overlay.className = "modal-overlay";
-
-    const closeBtn = document.createElement("button");
-    closeBtn.className = "modal-close";
-    closeBtn.innerText = "닫기 X";
-    closeBtn.onclick = () => {
-        overlay.remove();
-        document.removeEventListener("keydown", handleEsc);
-    };
+    overlay.className = "modal-backdrop";
 
     const handleEsc = (e) => {
         if (e.key === "Escape") {
@@ -573,7 +565,7 @@ function openProjectModal(project) {
     document.addEventListener("keydown", handleEsc);
 
     const modalBox = document.createElement("div");
-    modalBox.className = "modal-box box";
+    modalBox.className = "modal";
     modalBox.style.borderColor = project.color || "#000";
     
     modalBox.setAttribute("tabindex", "-1");
@@ -585,15 +577,16 @@ function openProjectModal(project) {
             <div style="margin-top:20px; border-top: 1px solid #ddd; padding-top: 15px;">
                 <strong style="display:block; margin-bottom:10px;">관련 리포트 및 포스트</strong>
                 <div style="display:flex; flex-direction:column; gap:8px;">
-                    ${relatedPosts.map(p => `<button class="action-button lime" style="width:100%; text-align:left; font-size:14px;" onclick="document.querySelector('.modal-overlay').remove(); openPost('${p.id}')">📄 ${p.title}</button>`).join('')}
+                    ${relatedPosts.map(p => `<button class="action-button lime" style="width:100%; text-align:left; font-size:14px;" onclick="document.querySelector('.modal-backdrop').remove(); openPost('${p.id}')">📄 ${p.title}</button>`).join('')}
                 </div>
             </div>
         `;
     }
 
     modalBox.innerHTML = `
-        <div class="modal-header" style="border-bottom-color: ${project.color || '#000'}">
+        <div class="modal-head" style="border-bottom-color: ${project.color || '#000'}">
             <h2 style="color: ${project.color || '#000'}">${project.title}</h2>
+            <button class="modal-close" style="width:34px; height:34px; border:2px solid #000; background:var(--ivory); font-weight:950; cursor:pointer;">X</button>
         </div>
         <div class="modal-body">
             <img src="${project.thumb}" alt="${project.title}">
@@ -611,9 +604,13 @@ function openProjectModal(project) {
         </div>
     `;
 
-    overlay.appendChild(closeBtn);
     overlay.appendChild(modalBox);
     root.appendChild(overlay);
+    
+    modalBox.querySelector(".modal-close").onclick = () => {
+        overlay.remove();
+        document.removeEventListener("keydown", handleEsc);
+    };
     
     modalBox.focus();
 }
