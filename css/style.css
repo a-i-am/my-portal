@@ -723,6 +723,13 @@ img {
     background: var(--lime);
 }
 
+#view-programs .window-title {
+    color: var(--theme-olive);
+}
+#programs-grid {
+    grid-column: 1 / -1;
+}
+
 .form-result {
     grid-column: 1 / -1;
     min-height: 1.3em;

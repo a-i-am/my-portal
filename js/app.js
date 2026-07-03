@@ -1,91 +1,132 @@
-const biomedProjects = [
+const programsProjects = [
     {
-        title: "상지 근골격계 해부도 시리즈",
-        subtitle: "Upper Limb Musculoskeletal Series",
+        title: "COUPONGO",
+        subtitle: "React Web Board Game",
         year: "2026",
-        tags: ["해부학", "근골격계", "상지", "일러스트"],
-        thumb: "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=400&h=300&fit=crop",
-        desc: "어깨에서 손목까지 이어지는 상지 전체 근골격계를 레이어 기반 구조로 시각화. 기시와 정지의 해부학적 정확성을 최우선으로 했으며, 총 14장의 시리즈로 구성.",
-        tools: ["Procreate", "ZBrush", "Adobe Illustrator"],
+        tags: ["React", "Vite", "Zustand", "Framer Motion"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=260&fit=crop",
+        desc: "경마 시스템과 마피아 게임의 추리 요소를 결합한 웹 보드게임. 상태 머신 로직 설계 및 AI 기반 자동 레이스 루프 연동.",
+        tools: ["React", "Zustand"],
         color: "#8d9568",
     },
     {
-        title: "심장 판막 수술 절차 삽화",
-        subtitle: "Cardiac Valve Surgery Procedure Illustration",
-        year: "2025",
-        tags: ["심장", "외과수술", "절차도", "의학삽화"],
-        thumb: "https://images.unsplash.com/photo-1715111965644-3d885beb3a44?w=400&h=300&fit=crop",
-        desc: "심장 외과의와의 협업으로 완성된 판막 치환 수술 절차 시각화. 수술 단계별 절개 방향, 봉합 위치, 카테터 경로를 정밀하게 도해.",
-        tools: ["Adobe Illustrator", "Photoshop", "Blender"],
-        color: "#f2fedc",
-    },
-    {
-        title: "신경계 교육용 3D 인터랙티브 모델",
-        subtitle: "Nervous System Educational 3D Model",
-        year: "2025",
-        tags: ["신경계", "3D모델링", "교육용", "인터랙티브"],
-        thumb: "https://images.unsplash.com/photo-1715529134960-b49e99668dcc?w=400&h=300&fit=crop",
-        desc: "중추신경계와 말초신경계를 레이어별로 분해 가능한 3D 교육 모델. 의대생 대상 실습 자료로 개발되었으며, 뇌간에서 척수와 말초 분지까지 포함.",
-        tools: ["ZBrush", "Blender", "Substance Painter"],
+        title: "Jellyfish Dancers",
+        subtitle: "Interactive VFX Media Art",
+        year: "2026",
+        tags: ["Unity 6", "VFX Graph", "Media Art", "TCP/UDP"],
+        type: "media",
+        thumb: "https://images.unsplash.com/photo-1544331569-8041d8e1fb7c?w=400&h=260&fit=crop",
+        desc: "웹캠 및 센서 네트워크 기반 실시간 반응형 미디어 아트 프로젝트. 세그멘테이션 데이터 셰이더 연동 및 다중 센서 입력 파이프라인 구성.",
+        tools: ["Unity 6", "VFX Graph"],
         color: "#c5ee3b",
     },
     {
-        title: "척추 디스크 병리학 비교 시각화",
-        subtitle: "Spinal Disc Pathology Comparison",
-        year: "2024",
-        tags: ["척추", "병리학", "비교도", "MRI참조"],
-        thumb: "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?w=400&h=300&fit=crop&crop=bottom",
-        desc: "정상 디스크와 탈출, 협착 상태의 단계별 진행을 나란히 배치한 비교 삽화. 실제 MRI 이미지를 참조해 각 조직의 형태 변화를 반영.",
-        tools: ["Adobe Illustrator", "Procreate"],
+        title: "url2pdf",
+        subtitle: "Automated PDF Converter",
+        year: "2026",
+        tags: ["Python", "Automation", "Tool"],
+        type: "tools",
+        thumb: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=260&fit=crop",
+        desc: "웹 페이지를 PDF 파일로 일괄 변환하는 자동화 도구. 웹 페이지 URL 추출 및 PDF 변환 파이프라인 스크립트 작성.",
+        tools: ["Python"],
+        color: "#f2fedc",
+    },
+    {
+        title: "Uni Birth",
+        subtitle: "Turn-Based RPG",
+        year: "2025",
+        tags: ["Unreal Engine 5", "C++", "RPG"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=400&h=260&fit=crop",
+        desc: "실시간 반응형 턴제 RPG. 턴제 전투 시스템 설계, 실시간 회피/패링 QTE 구현 및 버프 시스템 구축.",
+        tools: ["UE5", "C++"],
         color: "#8d9568",
     },
+    {
+        title: "Project LUP",
+        subtitle: "AI Pathfinding & BT Test",
+        year: "2025",
+        tags: ["C++", "C#", "AI", "A*", "Behavior Tree"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=400&h=260&fit=crop",
+        desc: "A* 알고리즘 및 행동 트리 기반 AI 구현 프로젝트. 그리드 기반 A* 경로 탐색 알고리즘 구현.",
+        tools: ["C++", "C#"],
+        color: "#c5ee3b",
+    },
+    {
+        title: "WHERE IS MY TOILET?",
+        subtitle: "2D Platformer",
+        year: "2025",
+        tags: ["Unity 2D", "C#", "GameJam"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=260&fit=crop",
+        desc: "인하대학교 미래인재개발원 게임잼 출품 2D 플랫포머 액션 게임. FSM 기반 Enemy AI 시스템 구현.",
+        tools: ["Unity 2D", "C#"],
+        color: "#f2fedc",
+    },
+    {
+        title: "Tell The Story",
+        subtitle: "Acting Simulation Game",
+        year: "2024",
+        tags: ["Unity 3D", "C#", "Simulation"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=400&h=260&fit=crop",
+        desc: "컴투스 공모전 컴:온 2024 출품작. 대사 및 텍스트 기반 시뮬레이션 게임. 데이터 구조 설계 및 UGUI 시스템 개발.",
+        tools: ["Unity 3D", "C#"],
+        color: "#8d9568",
+    }
 ];
 
 const gameProjects = [
     {
-        title: "커스텀 DirectX 12 렌더러",
-        subtitle: "Custom DirectX 12 Renderer",
-        year: "2026",
-        tags: ["DirectX12", "C++", "렌더링", "HLSL"],
-        thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=260&fit=crop",
-        desc: "DX12 기반의 경량 렌더링 엔진. Descriptor Heap 풀 관리, Bindless 텍스처, PSO 캐싱 시스템을 자체 구현.",
-        stats: [{ label: "드로우콜 감소", value: "68%" }, { label: "FPS 향상", value: "2.4x" }],
-        lang: "C++ / HLSL",
+        title: "Uni Birth / Turn-Based RPG",
+        subtitle: "UE5 Action RPG",
+        year: "2025",
+        tags: ["Unreal Engine 5", "C++", "RPG"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=400&h=260&fit=crop",
+        desc: "실시간 반응형 턴제 RPG. 턴제 전투 시스템 설계, 실시간 회피/패링 QTE 구현 및 버프 시스템 구축.",
+        stats: [{ label: "엔진", value: "UE5" }, { label: "언어", value: "C++" }],
+        lang: "C++",
+        color: "#8d9568",
+    },
+    {
+        title: "Project LUP",
+        subtitle: "AI Pathfinding & BT Test",
+        year: "2025",
+        tags: ["C++", "C#", "AI", "A*", "Behavior Tree"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=400&h=260&fit=crop",
+        desc: "A* 알고리즘 및 행동 트리 기반 AI 구현 프로젝트. 그리드 기반 A* 경로 탐색 알고리즘 구현.",
+        stats: [{ label: "알고리즘", value: "A*" }, { label: "AI", value: "BT" }],
+        lang: "C++ / C#",
         color: "#c5ee3b",
     },
     {
-        title: "메모리 풀 관리 시스템",
-        subtitle: "Custom Memory Pool Manager",
-        year: "2025",
-        tags: ["메모리관리", "C++", "최적화", "풀링"],
-        thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=400&h=260&fit=crop",
-        desc: "게임 런타임 힙 단편화를 최소화하는 계층형 메모리 풀. 프레임 단위 스택 할당자와 오브젝트 풀을 결합한 방식.",
-        stats: [{ label: "단편화 감소", value: "82%" }, { label: "할당 속도", value: "15x" }],
-        lang: "C++17",
+        title: "YOU / 2D Casual Action",
+        subtitle: "2D Action RPG Demo",
+        year: "2024",
+        tags: ["Unity 2D", "C#", "RPG"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=260&fit=crop",
+        desc: "적을 수집해 아군으로 소환하는 2D 횡스크롤 액션 RPG 데모 프로젝트. 캐릭터 조작, 팔로워 포메이션 구현.",
+        stats: [{ label: "엔진", value: "Unity" }, { label: "언어", value: "C#" }],
+        lang: "C#",
         color: "#f2fedc",
     },
     {
-        title: "C++ ECS 프레임워크",
-        subtitle: "Entity Component System Framework",
+        title: "Lemmings Win32 API",
+        subtitle: "Retro Game Clone",
         year: "2025",
-        tags: ["ECS", "C++", "아키텍처", "DOD"],
-        thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=400&h=260&fit=crop",
-        desc: "데이터 지향 설계 원칙에 따라 설계된 경량 ECS. Archetype 기반 컴포넌트 저장으로 캐시 효율을 높였습니다.",
-        stats: [{ label: "엔티티 처리", value: "100K/frame" }, { label: "캐시 히트율", value: "94%" }],
-        lang: "C++20",
-        color: "#c5ee3b",
-    },
-    {
-        title: "언리얼 엔진 플러그인 - AI LOD",
-        subtitle: "Unreal Engine AI LOD Plugin",
-        year: "2024",
-        tags: ["언리얼엔진", "C++", "LOD", "AI"],
-        thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=260&fit=crop&crop=left",
-        desc: "카메라 거리, 각도, 현재 FPS를 종합 판단하여 LOD 레벨을 동적으로 조정하는 UE5 플러그인.",
-        stats: [{ label: "GPU 부하 절감", value: "30%" }, { label: "지원 언리얼", value: "UE5.4+" }],
-        lang: "C++ / Blueprint",
+        tags: ["Windows API", "C++", "Clone"],
+        type: "game",
+        thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=400&h=260&fit=crop",
+        desc: "고전 게임 '레밍즈' 모작 프로젝트. WinAPI 환경 그래픽 렌더링 및 객체 제어 시스템 구현.",
+        stats: [{ label: "API", value: "Win32" }, { label: "언어", value: "C++" }],
+        lang: "C++",
         color: "#8d9568",
-    },
+    }
 ];
 
 let blogPosts = [
@@ -104,8 +145,8 @@ let blogPosts = [
     },
     {
         id: "upper-limb-origin-insertion",
-        category: "biomed",
-        categoryLabel: "바이오 메디컬 아트",
+        category: "programs",
+        categoryLabel: "인터랙티브 웹/미디어",
         title: "상지 해부학 시각화의 기준점 설정법: Origin과 Insertion",
         date: "2026년 6월 12일",
         readMin: 8,
@@ -130,8 +171,8 @@ let blogPosts = [
     },
     {
         id: "medical-art-validation",
-        category: "biomed",
-        categoryLabel: "바이오 메디컬 아트",
+        category: "programs",
+        categoryLabel: "인터랙티브 웹/미디어",
         title: "의학 삽화 제작 시 해부학적 고증 방법론",
         date: "2026년 5월 18일",
         readMin: 10,
@@ -158,7 +199,7 @@ let blogPosts = [
 
 const navLabels = {
     home: "집 (Home)",
-    biomed: "바이오 메디컬 아트",
+    programs: "개발 프로그램",
     game: "게임 클라이언트",
     blog: "블로그",
     reader: "블로그",
@@ -169,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
     bindNavigation();
     bindFilters();
     bindContactForm();
-    renderProjects("biomed-grid", biomedProjects, "biomed");
+    renderProjects("programs-grid", programsProjects, "programs");
     renderProjects("game-grid", gameProjects, "game");
     loadManifestPosts();
     route(location.hash.replace("#", "") || "home", false);
@@ -192,7 +233,7 @@ async function loadManifestPosts() {
             excerpt: post.summary || "",
             file: post.file,
             body: post.body,
-            color: normalizeCategory(post.category) === "biomed" ? "#8d9568" : "#c5ee3b",
+            color: normalizeCategory(post.category) === "programs" ? "#8d9568" : "#c5ee3b",
         }));
         const knownIds = new Set(normalized.map((post) => post.id));
         blogPosts = [...normalized, ...blogPosts.filter((post) => !knownIds.has(post.id))];
@@ -205,7 +246,7 @@ async function loadManifestPosts() {
 
 function normalizeCategory(category = "") {
     const text = category.toLowerCase();
-    if (text.includes("bio") || text.includes("의학") || text.includes("해부")) return "biomed";
+    if (text.includes("programs") || text.includes("web") || text.includes("media") || text.includes("인터랙티브")) return "programs";
     if (text.includes("game") || text.includes("dev") || text.includes("til") || text.includes("c++")) return "game";
     return "all";
 }
@@ -233,6 +274,28 @@ function bindFilters() {
             document.querySelectorAll("[data-filter]").forEach((el) => el.classList.remove("active"));
             button.classList.add("active");
             renderBlogPosts(button.dataset.filter);
+        });
+    });
+
+    document.querySelectorAll("[data-filter-prog]").forEach((button) => {
+        button.addEventListener("click", () => {
+            document.querySelectorAll("[data-filter-prog]").forEach((el) => el.classList.remove("active"));
+            button.classList.add("active");
+            
+            const filter = button.dataset.filterProg;
+            const filteredProjects = filter === "all" ? programsProjects : programsProjects.filter(p => p.type === filter);
+            renderProjects("programs-grid", filteredProjects, "programs");
+        });
+    });
+    
+    document.querySelectorAll("[data-prog]").forEach((button) => {
+        button.addEventListener("click", () => {
+            const filter = button.dataset.prog;
+            document.querySelectorAll("[data-filter-prog]").forEach((el) => {
+                el.classList.toggle("active", el.dataset.filterProg === filter);
+            });
+            const filteredProjects = filter === "all" ? programsProjects : programsProjects.filter(p => p.type === filter);
+            renderProjects("programs-grid", filteredProjects, "programs");
         });
     });
 }
@@ -289,8 +352,8 @@ function renderProjects(containerId, projects, type) {
 
 function projectCard(project, index, type) {
     const details = type === "game"
-        ? `<div class="project-stats">${project.stats.map((stat) => `<span>${stat.value} ${stat.label}</span>`).join("")}</div>`
-        : `<div class="mini-tags">${project.tags.slice(0, 3).map((tag) => `<span>#${tag}</span>`).join("")}</div>`;
+        ? `<div class="project-stats">${(project.stats || []).map((stat) => `<span>${stat.value} ${stat.label}</span>`).join("")}</div>`
+        : `<div class="mini-tags">${(project.tools || project.tags || []).slice(0, 3).map((tag) => `<span>#${tag}</span>`).join("")}</div>`;
 
     return `
         <button class="project-card box" type="button" data-project="${index}">
