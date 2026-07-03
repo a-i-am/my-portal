@@ -109,65 +109,7 @@ const tilCategories = {
     "인사이트 및 라이프 (회고 및 분석)": ["개발자 회고", "다이어리"]
 };
 
-let tilPosts = [
-    {
-        id: "drawcall-optimization",
-        title: "대규모 씬의 드로우콜 최적화 분석",
-        date: "2026-06-30",
-        mainCategory: "게임 엔진 (엔진 기술 및 최적화)",
-        subCategory: "유니티",
-        thumb: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=200&h=140&fit=crop",
-        excerpt: "대규모 오픈월드 씬에서 동일 메시를 효율적으로 렌더링하려면 드로우콜 수를 줄여야 합니다.",
-        body: "# 드로우콜 최적화\n\nInstancing과 배칭은 동일 렌더 상태를 묶어 CPU 제출 비용을 낮추는 기본 전략입니다.\n\n## 핵심\n\n- 동일 메시와 머티리얼을 먼저 묶기\n- 상태 변경을 줄이기\n- 측정 후 병목만 최적화하기",
-        color: "#d9f9a5",
-    },
-    {
-        id: "descriptor-heap",
-        title: "DX12 Descriptor Heap 파이프라인",
-        date: "2026-06-25",
-        mainCategory: "CS 및 프로그래밍 (기본기 및 아키텍처)",
-        subCategory: "코어 지식",
-        thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=200&h=140&fit=crop",
-        excerpt: "DX12의 Descriptor 관리는 렌더링 성능과 안정성에 직접 영향을 주는 저수준 책임입니다.",
-        body: "# Descriptor Heap 관리\n\nDescriptor Heap은 프레임 수명과 리소스 수명을 분리해 관리하면 단순해집니다.\n\n## 원칙\n\n- 프레임 임시 할당은 링 버퍼\n- 장기 리소스는 고정 슬롯\n- 재사용은 fence 이후",
-        color: "#d9f9a5",
-    },
-    {
-        id: "memory-pool",
-        title: "실시간 렌더링을 위한 메모리 풀링",
-        date: "2026-06-20",
-        mainCategory: "CS 및 프로그래밍 (기본기 및 아키텍처)",
-        subCategory: "코어 지식",
-        thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=200&h=140&fit=crop",
-        excerpt: "게임 런타임에서 예측 가능한 할당 시간은 프레임 안정성을 지키는 기본 조건입니다.",
-        body: "# 메모리 풀 할당자\n\n고정 크기 객체가 많다면 범용 힙보다 풀 할당자가 단순하고 빠릅니다.\n\n## 적용 기준\n\n- 크기가 일정한 객체\n- 생성과 파괴가 잦은 객체\n- 프레임 타임 흔들림이 문제인 구간",
-        color: "#d9f9a5",
-    },
-    {
-        id: "project-lup-report",
-        title: "[Project LUP] A* 알고리즘과 BT 기반 AI 포스트모템",
-        date: "2025-11-15",
-        mainCategory: "프로젝트 및 포트폴리오 (산출물)",
-        subCategory: "게임 클라이언트 개발",
-        seriesName: "Project LUP",
-        thumb: "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=200&h=140&fit=crop",
-        excerpt: "Project LUP 개발 과정에서의 경로 탐색 최적화 및 행동 트리 구조 설계 회고.",
-        body: "# Project LUP 포스트모템\n\n이 글에서는 Project LUP의 주요 아키텍처 결정을 되돌아봅니다.",
-        color: "#6ccbbb",
-    },
-    {
-        id: "uni-birth-report",
-        title: "[Uni Birth] 턴제 전투 시스템 구조화",
-        date: "2025-08-10",
-        mainCategory: "프로젝트 및 포트폴리오 (산출물)",
-        subCategory: "게임 클라이언트 개발",
-        seriesName: "Uni Birth",
-        thumb: "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=200&h=140&fit=crop",
-        excerpt: "UE5 기반 Uni Birth 프로젝트의 턴제 상태 머신 및 QTE 판정 시스템 구현기.",
-        body: "# Uni Birth 포스트모템\n\n전투 시스템을 유연하게 가져가기 위해 상태 머신을 어떻게 구축했는지 살펴봅니다.",
-        color: "#6ccbbb",
-    }
-];
+let tilPosts = [];
 
 let activeProgFilter = "all";
 let activeTilMainCategory = "all";
@@ -192,16 +134,16 @@ document.addEventListener("DOMContentLoaded", () => {
             id: post.id,
             title: post.title,
             date: post.date,
-            mainCategory: post.category === "TIL" ? "인사이트 및 라이프 (회고 및 분석)" : "CS 및 프로그래밍 (기본기 및 아키텍처)",
-            subCategory: post.category === "TIL" ? "다이어리" : "코어 지식",
+            mainCategory: post.mainCategory || "인사이트 및 라이프 (회고 및 분석)",
+            subCategory: post.subCategory || "다이어리",
+            seriesName: post.seriesName || null,
             thumb: post.thumb || "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
             excerpt: post.summary || "",
             file: post.file,
             body: post.body,
-            color: "#6ccbbb",
+            color: post.color || "#6ccbbb",
         }));
-        const knownIds = new Set(normalized.map((post) => post.id));
-        tilPosts = [...normalized, ...tilPosts.filter((post) => !knownIds.has(post.id))];
+        tilPosts = normalized;
         renderTilPosts();
         renderSeriesPosts();
         renderRecentPosts();
