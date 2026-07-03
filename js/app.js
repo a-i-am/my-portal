@@ -578,9 +578,17 @@ function openProjectModal(project) {
     
     modalBox.setAttribute("tabindex", "-1");
     
-    let reportButtonHtml = '';
-    if (project.reportId) {
-        reportButtonHtml = `<button class="action-button lime report-btn" style="margin-top:20px; width:100%; font-weight:bold;" id="btn-open-report">📝 프로젝트 리포트 보기</button>`;
+    const relatedPosts = tilPosts.filter(p => p.seriesName && project.title.includes(p.seriesName));
+    let reportHtml = '';
+    if (relatedPosts.length > 0) {
+        reportHtml = `
+            <div style="margin-top:20px; border-top: 1px solid #ddd; padding-top: 15px;">
+                <strong style="display:block; margin-bottom:10px;">관련 리포트 및 포스트</strong>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    ${relatedPosts.map(p => `<button class="action-button lime" style="width:100%; text-align:left; font-size:14px;" onclick="document.querySelector('.modal-overlay').remove(); openPost('${p.id}')">📄 ${p.title}</button>`).join('')}
+                </div>
+            </div>
+        `;
     }
 
     modalBox.innerHTML = `
@@ -599,7 +607,7 @@ function openProjectModal(project) {
                 ${project.stats.map((s) => `<div><strong>${s.label}</strong><span>${s.value}</span></div>`).join("")}
             </div>` : ""}
             <div class="mini-tags">${project.tags.map((tag) => `<span>#${tag}</span>`).join("")}</div>
-            ${reportButtonHtml}
+            ${reportHtml}
         </div>
     `;
 
@@ -608,14 +616,6 @@ function openProjectModal(project) {
     root.appendChild(overlay);
     
     modalBox.focus();
-
-    if (project.reportId) {
-        document.getElementById("btn-open-report").onclick = () => {
-            overlay.remove();
-            document.removeEventListener("keydown", handleEsc);
-            openPost(project.reportId);
-        };
-    }
 }
 
 function handleContactSubmit(e) {
