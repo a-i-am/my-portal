@@ -346,5 +346,17 @@
     "summary": "제4편 게임에 생동감 불어넣기: Cinemachine과 DOTween 시리즈 목차 제1편 적을 아군으로: 포획과 팔로워 소환 파이프라인 제2편 다중 팔로워 제어: 똑똑한 타겟팅과 ...",
     "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
     "color": "#6ccbbb"
+  },
+  {
+    "id": "url2pdf-연재-시리즈-기획-목차",
+    "title": "url2pdf 연재 시리즈 기획 목차",
+    "date": "2026-07-03",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "SW 및 도구 개발",
+    "seriesName": "",
+    "file": "posts/url2pdf_Series_Index.md",
+    "summary": "url2pdf: 웹 페이지를 PDF로 변환하는 파이썬 패키지 구현기 Series Index 📌 제1편 url2pdf 아키텍처 설계와 Python 패키징 주제: 기존 HTMLtoPD...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
   }
 ]
