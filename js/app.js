@@ -510,7 +510,14 @@ function openProjectModal(project) {
     
     modalBox.setAttribute("tabindex", "-1");
     
-    const relatedPosts = tilPosts.filter(p => p.seriesName && project.title.includes(p.seriesName));
+    const normTitle = project.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const relatedPosts = tilPosts.filter(p => {
+        if (!p.seriesName) return false;
+        const normSeries = p.seriesName.toLowerCase().replace(/[^a-z0-9]/g, '');
+        if (normSeries.includes('toillet') && normTitle.includes('toilet')) return true;
+        if (normTitle === 'you2dcasualaction' && normSeries === 'you') return true;
+        return normTitle.includes(normSeries) || normSeries.includes(normTitle);
+    });
     let reportHtml = '';
     if (relatedPosts.length > 0) {
         reportHtml = `
