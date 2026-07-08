@@ -1,11 +1,3 @@
----
-title: "[제1편] 3D 공간 속의 2D: 빌보드 기법과 8방향 스프라이트"
-series: "Tell The Story"
-part: 1
-date: "2026-07-03"
-tags: ["unity", "3d", "2d", "billboard", "sprite"]
----
-
 # [제1편] 3D 공간 속의 2D: 빌보드 기법과 8방향 스프라이트
 
 > **시리즈 목차**

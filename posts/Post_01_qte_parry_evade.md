@@ -1,11 +1,3 @@
----
-title: "[제1편] 실시간 반응형 전투: 회피와 패링 QTE 시스템 설계"
-series: "Uni Birth"
-part: 1
-date: "2026-07-08"
-tags: ["unreal-engine", "c++", "qte", "rpg", "combat"]
----
-
 # [제1편] 실시간 반응형 전투: 회피와 패링 QTE 시스템 설계
 
 > **시리즈 목차**

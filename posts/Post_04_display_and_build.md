@@ -1,11 +1,3 @@
----
-title: "[제4편] 전시 환경 최적화: 멀티 디스플레이와 빌드 자동화"
-series: "Jellyfish Dancers"
-part: 4
-date: "2026-07-03"
-tags: ["unity", "multi-display", "build", "automation"]
----
-
 # [제4편] 전시 환경 최적화: 멀티 디스플레이와 빌드 자동화
 
 > **시리즈 목차**

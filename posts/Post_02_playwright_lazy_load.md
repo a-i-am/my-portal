@@ -1,11 +1,3 @@
----
-title: "[제2편] url2pdf: 웹 브라우저 자동화와 지연 로딩(Lazy-Load) 콘텐츠 처리"
-series: "url2pdf"
-part: 2
-date: "2026-07-03"
-tags: ["url2pdf", "python", "playwright", "crawler", "lazy-load", "javascript"]
----
-
 # [제2편] url2pdf: 웹 브라우저 자동화와 지연 로딩(Lazy-Load) 콘텐츠 처리
 
 > **시리즈 목차**

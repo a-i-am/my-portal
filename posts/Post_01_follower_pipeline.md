@@ -1,11 +1,3 @@
----
-title: "[제1편] 적을 아군으로: 포획과 팔로워 소환 파이프라인"
-series: "YOU"
-part: 1
-date: "2026-07-03"
-tags: ["unity", "2d", "casual-action", "follower", "spawn"]
----
-
 # [제1편] 적을 아군으로: 포획과 팔로워 소환 파이프라인
 
 > **시리즈 목차**

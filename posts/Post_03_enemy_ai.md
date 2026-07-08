@@ -1,11 +1,3 @@
----
-title: "[제3편] 적 AI 구현: FSM 기반의 똑똑한 몬스터 만들기"
-series: "Where Is My Toillet"
-part: 3
-date: "2026-07-03"
-tags: ["unity", "2d", "ai", "fsm", "gamejam"]
----
-
 # [제3편] 적 AI 구현: FSM 기반의 똑똑한 몬스터 만들기
 
 > **시리즈 목차**

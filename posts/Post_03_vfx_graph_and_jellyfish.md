@@ -1,11 +1,3 @@
----
-title: "[제3편] 실시간 파티클 아트: Visual Effect Graph와 해파리 군집"
-series: "Jellyfish Dancers"
-part: 3
-date: "2026-07-03"
-tags: ["unity", "vfx-graph", "jellyfish", "particle"]
----
-
 # [제3편] 실시간 파티클 아트: Visual Effect Graph와 해파리 군집
 
 > **시리즈 목차**

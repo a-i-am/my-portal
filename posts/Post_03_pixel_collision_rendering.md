@@ -1,11 +1,3 @@
----
-title: "[제3편] 픽셀 단위 마스크 충돌과 비트맵 렌더링 최적화"
-series: "Lemmings Win32 API"
-part: 3
-date: "2026-07-08"
-tags: ["c++", "win32-api", "collision", "rendering", "gdi"]
----
-
 # [제3편] 픽셀 단위 마스크 충돌과 비트맵 렌더링 최적화
 
 > **시리즈 목차**

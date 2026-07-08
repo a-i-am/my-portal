@@ -1,11 +1,3 @@
----
-title: "[제4편] 반복 작업 줄이기: TMP 폰트 일괄 교체 커스텀 에디터 툴"
-series: "Tell The Story"
-part: 4
-date: "2026-07-03"
-tags: ["unity", "editor-tool", "tmp", "custom-editor", "automation"]
----
-
 # [제4편] 반복 작업 줄이기: TMP 폰트 일괄 교체 커스텀 에디터 툴
 
 > **시리즈 목차**

@@ -1,11 +1,3 @@
----
-title: "[제1편] Win32 API 기반 자체 프레임워크 설계"
-series: "Lemmings Win32 API"
-part: 1
-date: "2026-07-08"
-tags: ["c++", "win32-api", "framework", "architecture", "actor-component"]
----
-
 # [제1편] Win32 API 기반 자체 프레임워크 설계
 
 > **시리즈 목차**

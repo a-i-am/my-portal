@@ -1,11 +1,3 @@
----
-title: "[제2편] 복합 길찾기: 2D 그리드 A*와 실내 PathPoint의 결합"
-series: "Project LUP"
-part: 2
-date: "2026-07-03"
-tags: ["unity", "pathfinding", "astar", "slg"]
----
-
 # [제2편] 복합 길찾기: 2D 그리드 A*와 실내 PathPoint의 결합
 
 > **시리즈 목차**

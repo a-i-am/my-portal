@@ -1,11 +1,3 @@
----
-title: "[제3편] url2pdf: 명령어 입력 방식(CLI) 설계와 봇 방지 화면 처리"
-series: "url2pdf"
-part: 3
-date: "2026-07-03"
-tags: ["url2pdf", "python", "cli", "argparse", "bot-bypass"]
----
-
 # [제3편] url2pdf: 명령어 입력 방식(CLI) 설계와 봇 방지 화면 처리
 
 > **시리즈 목차**

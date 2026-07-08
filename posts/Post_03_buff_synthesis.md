@@ -1,11 +1,3 @@
----
-title: "[제3편] 전략적 깊이 더하기: 동일 등급 버프의 연쇄 합성 시스템"
-series: "Uni Birth"
-part: 3
-date: "2026-07-08"
-tags: ["unreal-engine", "c++", "buff", "synthesis", "algorithm"]
----
-
 # [제3편] 전략적 깊이 더하기: 동일 등급 버프의 연쇄 합성 시스템
 
 > **시리즈 목차**

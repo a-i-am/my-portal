@@ -1,11 +1,3 @@
----
-title: "[제3편] 개발 효율 극대화: 맵 배치 및 경로 커스텀 에디터 툴"
-series: "Project LUP"
-part: 3
-date: "2026-07-03"
-tags: ["unity", "editor-tool", "json", "map-editor", "custom-editor"]
----
-
 # [제3편] 개발 효율 극대화: 맵 배치 및 경로 커스텀 에디터 툴
 
 > **시리즈 목차**

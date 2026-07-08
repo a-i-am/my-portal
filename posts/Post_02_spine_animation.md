@@ -1,11 +1,3 @@
----
-title: "[제2편] 애니메이션 제어: Spine과 Unity Animator의 만남"
-series: "Where Is My Toillet"
-part: 2
-date: "2026-07-03"
-tags: ["unity", "2d", "spine", "animation", "animator", "gamejam"]
----
-
 # [제2편] 애니메이션 제어: Spine과 Unity Animator의 만남
 
 > **시리즈 목차**

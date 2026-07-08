@@ -1,11 +1,3 @@
----
-title: "[제2편] 다중 팔로워 제어: 똑똑한 타겟팅과 공격 로직"
-series: "YOU"
-part: 2
-date: "2026-07-03"
-tags: ["unity", "2d", "casual-action", "follower", "ai", "targeting"]
----
-
 # [제2편] 다중 팔로워 제어: 똑똑한 타겟팅과 공격 로직
 
 > **시리즈 목차**

@@ -1,11 +1,3 @@
----
-title: "[제4편] 렌더링 최적화: GPU Instancing과 오클루전 컬링"
-series: "Project LUP"
-part: 4
-date: "2026-07-03"
-tags: ["unity", "optimization", "gpu-instancing", "occlusion-culling"]
----
-
 # [제4편] 렌더링 최적화: GPU Instancing과 오클루전 컬링
 
 > **시리즈 목차**

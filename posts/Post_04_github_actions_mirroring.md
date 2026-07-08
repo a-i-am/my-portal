@@ -1,11 +1,3 @@
----
-title: "[제4편] url2pdf: GitHub Actions를 이용한 저장소 코드 자동 복사 설정"
-series: "url2pdf"
-part: 4
-date: "2026-07-03"
-tags: ["url2pdf", "github-actions", "ci-cd", "mirroring", "automation"]
----
-
 # [제4편] url2pdf: GitHub Actions를 이용한 저장소 코드 자동 복사 설정
 
 > **시리즈 목차**

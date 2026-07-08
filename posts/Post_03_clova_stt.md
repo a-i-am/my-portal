@@ -1,11 +1,3 @@
----
-title: "[제3편] 목소리로 연기하다: NAVER CLOVA API 연동기"
-series: "Tell The Story"
-part: 3
-date: "2026-07-03"
-tags: ["unity", "api", "stt", "clova", "security"]
----
-
 # [제3편] 목소리로 연기하다: NAVER CLOVA API 연동기
 
 > **시리즈 목차**

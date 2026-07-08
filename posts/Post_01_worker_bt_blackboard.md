@@ -1,11 +1,3 @@
----
-title: "[제1편] 작업자 AI 설계: 행동 트리(BT)와 Blackboard"
-series: "Project LUP"
-part: 1
-date: "2026-07-03"
-tags: ["unity", "ai", "behaviour-tree", "blackboard", "slg"]
----
-
 # [제1편] 작업자 AI 설계: 행동 트리(BT)와 Blackboard
 
 > **시리즈 목차**

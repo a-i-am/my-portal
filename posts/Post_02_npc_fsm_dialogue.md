@@ -1,11 +1,3 @@
----
-title: "[제2편] NPC와의 상호작용: FSM을 활용한 대화 플로우 제어"
-series: "Tell The Story"
-part: 2
-date: "2026-07-03"
-tags: ["unity", "3d", "fsm", "npc", "dialogue", "ui"]
----
-
 # [제2편] NPC와의 상호작용: FSM을 활용한 대화 플로우 제어
 
 > **시리즈 목차**

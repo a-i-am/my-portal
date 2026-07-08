@@ -1,11 +1,3 @@
----
-title: "[제1편] url2pdf: 파이썬 기반 웹 브라우저 제어 도구 설계와 패키지 구성"
-series: "url2pdf"
-part: 1
-date: "2026-07-03"
-tags: ["url2pdf", "python", "playwright", "architecture", "packaging", "hatchling"]
----
-
 # [제1편] url2pdf: 파이썬 기반 웹 브라우저 제어 도구 설계와 패키지 구성
 
 > **시리즈 목차**

@@ -1,11 +1,3 @@
----
-title: "[제2편] 레밍즈의 행동 패턴: Job 시스템과 상태 관리"
-series: "Lemmings Win32 API"
-part: 2
-date: "2026-07-08"
-tags: ["c++", "state-pattern", "win32-api", "architecture", "design-pattern"]
----
-
 # [제2편] 레밍즈의 행동 패턴: Job 시스템과 상태 관리
 
 > **시리즈 목차**

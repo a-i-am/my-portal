@@ -1,11 +1,3 @@
----
-title: "[제1편] 센서 네트워크 연동: TCP/OSC 입력과 이벤트 파이프라인 구축"
-series: "Jellyfish Dancers"
-part: 1
-date: "2026-07-03"
-tags: ["unity", "osc", "sensor", "network", "event-pipeline"]
----
-
 # [제1편] 센서 네트워크 연동: TCP/OSC 입력과 이벤트 파이프라인 구축
 
 > **시리즈 목차**

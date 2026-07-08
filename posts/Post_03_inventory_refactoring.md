@@ -1,11 +1,3 @@
----
-title: "[제3편] 데이터의 분리: 유연한 인벤토리 리팩터링"
-series: "YOU"
-part: 3
-date: "2026-07-03"
-tags: ["unity", "2d", "casual-action", "inventory", "refactoring", "data-structure"]
----
-
 # [제3편] 데이터의 분리: 유연한 인벤토리 리팩터링
 
 > **시리즈 목차**

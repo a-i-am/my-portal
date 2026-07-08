@@ -1,11 +1,3 @@
----
-title: "[제4편] 게임에 생동감 불어넣기: Cinemachine과 DOTween"
-series: "YOU"
-part: 4
-date: "2026-07-03"
-tags: ["unity", "2d", "casual-action", "cinemachine", "dotween", "animation"]
----
-
 # [제4편] 게임에 생동감 불어넣기: Cinemachine과 DOTween
 
 > **시리즈 목차**

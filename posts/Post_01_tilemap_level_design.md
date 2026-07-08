@@ -1,11 +1,3 @@
----
-title: "[제1편] 2D 맵 설계: Tilemap을 활용한 빠른 레벨 디자인"
-series: "Where Is My Toillet"
-part: 1
-date: "2026-07-03"
-tags: ["unity", "2d", "tilemap", "gamejam", "level-design"]
----
-
 # [제1편] 2D 맵 설계: Tilemap을 활용한 빠른 레벨 디자인
 
 > **시리즈 목차**

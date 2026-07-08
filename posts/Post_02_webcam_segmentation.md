@@ -1,11 +1,3 @@
----
-title: "[제2편] 웹캠 실루엣 추출: Barracuda와 SelfieSegmentation"
-series: "Jellyfish Dancers"
-part: 2
-date: "2026-07-03"
-tags: ["unity", "webcam", "segmentation", "barracuda", "shader"]
----
-
 # [제2편] 웹캠 실루엣 추출: Barracuda와 SelfieSegmentation
 
 > **시리즈 목차**
