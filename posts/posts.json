@@ -1,5 +1,89 @@
 [
   {
+    "id": "Jellyfish-Dancers--인터랙티브-미디어-아트-개발기",
+    "title": "Jellyfish Dancers: 인터랙티브 미디어 아트 개발기",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "Jellyfish_Dancers",
+    "file": "posts/Jellyfish_Dancers_Series_Index.md",
+    "summary": "Jellyfish Dancers: 인터랙티브 미디어 아트 개발기 이 시리즈는 웹캠 및 센서 네트워크 입력에 반응하여 동작하는 인터랙티브 미디어 아트 프로젝트인 Jellyfish D...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "Lemmings-Win32-API--자체-프레임워크-기반-고전-게임-모작",
+    "title": "Lemmings Win32 API: 자체 프레임워크 기반 고전 게임 모작",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "Lemmings",
+    "file": "posts/Lemmings_Series_Index.md",
+    "summary": "Lemmings Win32 API: 자체 프레임워크 기반 고전 게임 모작 이 시리즈는 C++과 Win32 API만을 사용하여 고전 게임 'Lemmings레밍즈'를 모작하며 학습한 ...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "Project-LUP--대규모-협업과-SLG-시스템-개발기",
+    "title": "Project LUP: 대규모 협업과 SLG 시스템 개발기",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "ProjectLUP",
+    "file": "posts/ProjectLUP_Series_Index.md",
+    "summary": "Project LUP: 대규모 협업과 SLG 시스템 개발기 이 시리즈는 13인의 프로그래머가 공용 프레임워크 위에서 개발한 Unity 6 프로젝트, 'Project LUP' 의 S...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "Tell-The-Story--음성-인식-기반-3D-연기-시뮬레이션-개발기",
+    "title": "Tell The Story: 음성 인식 기반 3D 연기 시뮬레이션 개발기",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "TellTheStory",
+    "file": "posts/TellTheStory_Series_Index.md",
+    "summary": "Tell The Story: 음성 인식 기반 3D 연기 시뮬레이션 개발기 이 시리즈는 컴투스 글로벌 게임개발 공모전 출품작인 'Tell The Story' 프로젝트의 개발 과정을 ...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "Uni-Birth--언리얼-엔진-5-기반-반응형-턴제-RPG-개발기",
+    "title": "Uni Birth: 언리얼 엔진 5 기반 반응형 턴제 RPG 개발기",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "UniBirth",
+    "file": "posts/UniBirth_Series_Index.md",
+    "summary": "Uni Birth: 언리얼 엔진 5 기반 반응형 턴제 RPG 개발기 이 시리즈는 언리얼 엔진 5UE 5.5를 기반으로 개발한 턴제 RPG 'Uni Birth' 프로젝트에서 제가 담...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "WHERE-IS-MY-TOILLET--게임잼-2D-플랫포머-개발기",
+    "title": "WHERE IS MY TOILLET: 게임잼 2D 플랫포머 개발기",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "WhereIsMyToillet",
+    "file": "posts/WhereIsMyToillet_Series_Index.md",
+    "summary": "WHERE IS MY TOILLET: 게임잼 2D 플랫포머 개발기 이 시리즈는 인하대학교 게임잼에서 3일이라는 짧은 시간 동안 2D 플랫포머 게임을 개발하며 겪었던 레벨 디자인맵,...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "YOU--2D-캐주얼-액션-데모-개발기",
+    "title": "YOU: 2D 캐주얼 액션 데모 개발기",
+    "date": "2026-07-08",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "게임 클라이언트 개발",
+    "seriesName": "YOU",
+    "file": "posts/YOU_Series_Index.md",
+    "summary": "YOU: 2D 캐주얼 액션 데모 개발기 이 시리즈는 1인 개발로 진행된 2D 캐주얼 액션 데모 프로젝트 'YOU'의 핵심 시스템 구현 과정을 다룹니다. 적을 기절시켜 수집하고 아군...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
     "id": "-제1편--Win32-API-기반-자체-프레임워크-설계",
     "title": "[제1편] Win32 API 기반 자체 프레임워크 설계",
     "date": "2026-07-08",
@@ -68,6 +152,18 @@
     "seriesName": "Uni Birth",
     "file": "posts/Post_03_buff_synthesis.md",
     "summary": "제3편 전략적 깊이 더하기: 동일 등급 버프의 연쇄 합성 시스템 시리즈 목차 제1편 실시간 반응형 전투: 회피와 패링 QTE 시스템 설계 제2편 상태 변화의 중심: 버프/디버프 시...",
+    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
+    "color": "#6ccbbb"
+  },
+  {
+    "id": "url2pdf-연재-시리즈-기획-목차",
+    "title": "url2pdf 연재 시리즈 기획 목차",
+    "date": "2026-07-03",
+    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
+    "subCategory": "SW 및 도구 개발",
+    "seriesName": "",
+    "file": "posts/url2pdf_Series_Index.md",
+    "summary": "url2pdf: 웹 페이지를 PDF로 변환하는 파이썬 패키지 구현기 Series Index 📌 제1편 url2pdf 아키텍처 설계와 Python 패키징 주제: 기존 HTMLtoPD...",
     "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
     "color": "#6ccbbb"
   },
@@ -344,18 +440,6 @@
     "seriesName": "YOU",
     "file": "posts/Post_04_cinemachine_dotween.md",
     "summary": "제4편 게임에 생동감 불어넣기: Cinemachine과 DOTween 시리즈 목차 제1편 적을 아군으로: 포획과 팔로워 소환 파이프라인 제2편 다중 팔로워 제어: 똑똑한 타겟팅과 ...",
-    "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
-    "color": "#6ccbbb"
-  },
-  {
-    "id": "url2pdf-연재-시리즈-기획-목차",
-    "title": "url2pdf 연재 시리즈 기획 목차",
-    "date": "2026-07-03",
-    "mainCategory": "프로젝트 및 포트폴리오 (산출물)",
-    "subCategory": "SW 및 도구 개발",
-    "seriesName": "",
-    "file": "posts/url2pdf_Series_Index.md",
-    "summary": "url2pdf: 웹 페이지를 PDF로 변환하는 파이썬 패키지 구현기 Series Index 📌 제1편 url2pdf 아키텍처 설계와 Python 패키징 주제: 기존 HTMLtoPD...",
     "thumb": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=200&h=140&fit=crop",
     "color": "#6ccbbb"
   }
